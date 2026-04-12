@@ -1,0 +1,26 @@
+package level2;
+
+import java.util.Scanner;
+
+public class Program5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        double unitPrice;
+        int quantity;
+
+        System.out.print("Enter unit price: ");
+        unitPrice = sc.nextDouble();
+
+        System.out.print("Enter quantity: ");
+        quantity = sc.nextInt();
+
+        double totalPrice = unitPrice * quantity;
+
+        System.out.println("The total purchase price is INR " + totalPrice +
+                " if the quantity is " + quantity +
+                " and unit price is INR " + unitPrice);
+
+        sc.close();
+    }
+}
